@@ -7,7 +7,7 @@
   */
 
   // Replace contact@example.com with your real receiving email address
-  $receiving_email_address = 'gagebenham.studio@gmail.com';
+  $receiving_email_address = '81c191f739-69b2c5@inbox.mailtrap.io';
 
   if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
     include( $php_email_form );
