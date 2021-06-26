@@ -452,43 +452,22 @@
       </div>
     </section><!-- End Events Section -->
     
-    
-      <!-- <fieldset id="fs-frm-inputs">
+
+<!-- 
+    <form id="fs-frm" name="complaint-form" accept-charset="utf-8" action="https://formspree.io/f/{form_id}" method="post">
+      <fieldset id="fs-frm-inputs">
         <label for="full-name">Full Name</label>
         <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
         <label for="email-address">Email Address</label>
         <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
-        <fieldset id="fs-frm-selects">
-          <label for="timely">1. The service provided was completed in a timely manner.</label>
-          <select name="timely" id="timely" required="">
-            <option value="Choose" selected="" disabled="">Choose</option>
-            <option value="1">Strongly Agree</option>
-            <option value="3">Agree</option>
-            <option value="5">Neutral</option>
-            <option value="7">Disagree</option>
-            <option value="9">Strongly Disagree</option>
-          </select>
-          <label for="timely">2. The quality of work was high in quality.</label>
-          <select name="quality" id="quality" required="">
-            <option value="Choose" selected="" disabled="">Choose</option>
-            <option value="1">Strongly Agree</option>
-            <option value="3">Agree</option>
-            <option value="5">Neutral</option>
-            <option value="7">Disagree</option>
-            <option value="9">Strongly Disagree</option>
-          </select>
-        </fieldset>
-        <label for="message">Additional Comments</label>
-        <textarea rows="3" name="message" id="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor." required=""></textarea>
-        <input type="hidden" name="_subject" id="email-subject" value="Survey Responses">
+        <label for="telephone">Telephone Number (Optional)</label>
+        <input type="telephone" name="telephone" id="telephone" placeholder="(555) 555-5555">
+        <label for="complaint">Complaint</label>
+        <textarea rows="6" name="complaint" id="complaint" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required=""></textarea>
+        <input type="hidden" name="_subject" id="email-subject" value="Complaint Form Submission">
       </fieldset>
-      <input type="submit" value="Send Responses">
-    </form>
-
-  <!-- your other form fields go here -->
-
-  <!-- <button type="submit">Send</button> --> -->
-</form>
+      <input type="submit" value="File Complaint">
+    </form> -->
 
     <!-- ======= Book A Table Section ======= -->
     <section id="book-a-table" class="book-a-table">
@@ -503,21 +482,30 @@
           <div class="row">
             <div class="col-lg-4 col-md-6 form-group">
               <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-
+              <div class="validate"></div>
             </div>
             <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
               <input type="email" class="form-control" name="_replyto" id="email-address" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+              <div class="validate"></div>
             </div>
             <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
               <input type="text" class="form-control" name="telephone" id="telephone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
             </div>
 
           </div>
           <div class="form-group mt-3">
             <textarea class="form-control" name="message" id = "message"rows="5" placeholder="Commission Description"></textarea>
+            <div class="validate"></div>
+          </div>
+          <div class="mb-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your commission was sent. We will call back or send an Email to confirm quote. Thank you!</div>
           </div>
           <input type="hidden" name="_subject" id="email-subject" value="Survey Responses">
-          <input type="submit" value="Send Responses">
+          <div class="text-center"><input type="submit" value="Submit"></div>
+          
         </form>
 
       </div>
