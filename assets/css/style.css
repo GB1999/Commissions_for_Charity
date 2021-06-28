@@ -843,6 +843,9 @@ section {
 /*--------------------------------------------------------------
 # Why Us
 --------------------------------------------------------------*/
+/* .why-us{
+  background: url(../img/events-bg.jpg);
+} */
 .why-us .box {
   padding: 50px 30px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
@@ -873,7 +876,7 @@ section {
 }
 
 .why-us .box:hover {
-  background: #cda45e;
+  background: #444444;
   padding: 30px 30px 70px 30px;
   box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
 }
@@ -1048,7 +1051,8 @@ section {
 # Events
 --------------------------------------------------------------*/
 .events {
-  background: url(../img/events-bg.jpg) center center no-repeat;
+  /* background: url(../img/events-bg.jpg) center center no-repeat; */
+  background-color: #1a1814;
   background-size: cover;
   position: relative;
 }
